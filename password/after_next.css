@@ -1,0 +1,88 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css');
+*{
+    box-sizing: border-box;
+}
+.container-1{
+    padding: 3.2rem;
+    width: 40%;
+    border: 1px solid rgba(185, 173, 173, 0.87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 30%;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0rem;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+.form-group img{
+    width: 100px;
+    height: auto;
+}
+
+.form-group{
+    flex-wrap: wrap;
+    text-align: center;
+}
+.container-1 input{
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid black;
+}
+#submit {
+    margin-top: 2rem;
+    float:right;
+    border: 1px solid rgb(47, 76, 241);
+    color: white;
+    background-color: rgb(31, 87, 151);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.form-group a{
+    text-decoration: none;
+    font-family: 'Padauk', sans-serif;
+    color: rgb(31, 87, 151);;
+    font-size: 0.8rem;
+    font-weight: bold;
+    float: left;
+    margin-top: 2rem;
+    margin-right: 3rem;
+}
+.container-2{
+    margin-top: 2rem;
+    width: 40%;
+    margin-bottom: 2rem;
+    margin-left:  30%;
+    margin-right: 30%;
+    font-family: 'Montserrat', sans-serif;
+}
+.container-2 ul{
+    list-style: none;
+    width: 100%;
+    align-items: center;
+
+}
+
+.container-2 ul  li a{
+    text-decoration: none;
+    float: right;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(100, 123, 124);
+    padding-left: 0.8rem;
+}
+.container-2 ul li:nth-child(1){
+    float: left;
+}
+.container-2 ul li select{
+    border: none;
+    margin-left: -2rem;
+    
+}
+#togglePassword{
+   
+    float: right;
+    cursor: pointer;
+}

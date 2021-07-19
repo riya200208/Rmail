@@ -1,0 +1,111 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css');
+*{
+    box-sizing: border-box;
+}
+.container-1{
+    padding: 3.2rem;
+    width: 50%;
+    border: 1px solid rgba(185, 173, 173, 0.87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 25%;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0rem;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+.form-group img{
+    width: 100px;
+    height: auto;
+}
+.form-group h4 {
+    font-family: 'Padauk', sans-serif;
+    margin-top: 1.2rem;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    margin-bottom: 1.2rem;
+    font-weight: lighter;
+}
+.form-group{
+    flex-wrap: wrap;
+    text-align: center;
+}
+.container-1 input{
+    padding: 1.3rem;
+    width: 100%;
+    border: 1px solid black;
+    height: 5vh;
+}
+
+#submit {
+    
+    float:right;
+    border: 1px solid rgb(47, 76, 241);
+    color: white;
+    background-color: rgb(31, 87, 151);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin-top: 3rem;
+}
+
+
+
+.container-2{
+    margin-top: 2rem;
+    width: 50%;
+    margin-bottom: 2rem;
+    margin-left:  25%;
+    margin-right: 25%;
+    font-family: 'Montserrat', sans-serif;
+}
+.container-2 ul{
+    
+    list-style: none;
+    width: 100%;
+    align-items: center;
+
+}
+
+.container-2 ul  li a{
+    text-decoration: none;
+    float: right;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(100, 123, 124);
+    padding-left: 0.8rem;
+}
+.container-2 ul li:nth-child(1){
+    float: left;
+}
+.container-2 ul li select{
+    border: none;
+    margin-left: -1.5rem;
+    
+}
+
+@media only screen and (max-width:604px){
+    .container-2 ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+    }
+    .container-2 ul li:nth-child(2){
+        margin-right: 20px;
+    } 
+    .container-2 ul li:nth-child(3){
+        margin-right: 15px;
+    } 
+    .container-2 ul li:nth-child(4){
+        margin-right: 12px;
+    } 
+    .container-2 ul li select{
+        border: none;
+        margin-left: 0rem;
+        
+    }
+}

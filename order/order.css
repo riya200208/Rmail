@@ -1,0 +1,34 @@
+.container{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    padding-right: 5rem;
+}
+
+.btn{
+    padding: 2rem;
+    color: black;
+    background-color: brown;
+    border-radius: 15px;
+    border-color: wheat;
+    margin: 3px;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+#menu_btn{
+    padding-left: 5rem;
+    padding-right: 7rem;
+     margin-left:2rem; 
+}
+#customise_btn{
+    padding-left: 4rem;
+    padding-right: 5rem;
+     margin-left: 2rem;
+}
+li{
+    list-style: none;
+
+}

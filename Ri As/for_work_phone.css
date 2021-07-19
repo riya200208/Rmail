@@ -1,0 +1,63 @@
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative; 
+       /* position: fixed; */
+    width: 100%;
+    top: 0px;    
+   
+   flex-direction: column;
+}
+#navbar ul li a{
+   font-size: 1rem;
+   padding: 0px 7px;
+}
+#home{
+   height: 370px;
+   padding: 3px 50px;
+}
+#home::before{
+   height: 480px;
+}
+#home p{
+   font-size: 13px;
+}
+/* services section */
+#services{
+   flex-direction: column;
+}
+#services .box{
+   padding: 20px;
+   margin: 2px 0 px;
+   margin-bottom: 20px;
+}
+#services .box img{
+   width: 150px;
+}
+.btn{
+   font-size: 13px;
+   padding: 4px 8px;
+}
+/* client section */
+#clients{
+   flex-wrap: wrap;
+   background: url('client.jfif') no-repeat center center/cover;
+}
+#clients img{
+   width: 60px;
+   padding: 0px 6px;
+}
+
+
+
+/* contact us section */
+
+/* footer */
+/* utility classes */
+.primary{
+   margin-top: 15px;
+   font-size: 26px;
+  
+   
+}

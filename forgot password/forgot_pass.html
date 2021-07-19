@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in!</title>
+    <script src="sign_in.js"></script>
+    <link rel="stylesheet" href="forgot_pass.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:604px)" href="sign_phone.css">
+</head>
+
+<body>
+    <div class="container-1 shadow bg-body rounded">
+        <form action="">
+            <div class="form-group">
+                <img src="mail.jpg" alt="Rmail">
+            </div>
+            <div class="form-group">
+                <h2>Account Recovery.</h2>
+                <h3>Enter the last password you remember using with this account.</h3>
+            </div>
+
+            <input type="password" id="username" placeholder="password">
+
+            <input type="checkbox" value="Show" id="show">&nbsp;&nbsp;Show Password
+
+            <div class="form-group" id="sub">
+                <a href="../Help/help.html">Try another way.</a>
+                <button id="submit">Next</button>
+
+            </div>
+        </form>
+    </div>
+    <div class="container-2">
+        <ul>
+            <li><select name="" id="active">
+                    <option value="English(US)">English(US)</option>
+                    <option value="English(UK)">English(UK)</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="punjabi">punjabi</option>
+                    <option value="bengali">bengali</option>
+                    <option value="gujrati">gujrati</option>
+                    <option value="marathi">marathi</option>
+                </select>
+            </li>
+            <li><a href="../terms/terms.html">Terms</a></li>
+            <li><a href="../privacy/privacy.html">Privacy</a></li>
+            <li><a href="../Help/help.html">Help</a></li>
+
+
+        </ul>
+    </div>
+    <script>
+        document.querySelector("#show").addEventListener("click", function (event) {
+
+            var x = document.getElementById("username");
+            if (x.type === 'password') {
+                x.type = 'text';
+
+            }
+            else {
+                x.type = 'password';
+                
+            }
+        });
+        document.querySelector("#submit").addEventListener("click",function(event){
+            var x = document.getElementById("username").value;
+            let regex = /^(\w|\D)(\w|\D){7,}/g;
+            if(regex.test(x)){
+                window.open("../contact/contact.html");
+            }
+            else{
+                alert("please enter the password correctly");
+            }
+        });
+    </script>
+</body>
+
+</html>
